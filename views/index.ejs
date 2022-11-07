@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+        <h1>homePage Title .. </h1>
+        <p><%= homeData %></p>
+        <% myBlogs.forEach((element)=>{ %>
+                <h1><%= (JSON.parse(element)).title %></h1>
+                <p><%= (JSON.parse(element)).post %></p>
+        <% })%>
+        <div><a href="/publish">+</a></div>
+<%- include("partials/footer.ejs") %>      
+    

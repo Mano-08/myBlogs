@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+    <h1>Publish</h1>
+    <form action="/publish" method="post">
+        <label for="newBlogTitle">Title:</label><br>
+        <textarea id="newBlogTitle" name="newBlogTitle" rows="1" cols="50" placeholder="Enter Title Here ... "></textarea><br>
+        <label for="newBlogPost">Post:</label><br>
+        <textarea id="newBlogPost" name="newBlogPost" rows="10" cols="50" placeholder="Enter Title Here ... "></textarea><br>
+        <button name="publishBtn" type="submit">Publish</button>
+    </form>
+<%- include("partials/footer.ejs") %>
